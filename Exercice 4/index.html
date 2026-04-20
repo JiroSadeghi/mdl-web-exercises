@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cours de la Maison des Langues</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cours de la Maison des Langues</h1>
+
+    <div class="filters">
+      <div class="field">
+        <label for="language">Langue</label>
+        <select id="language">
+          <option value="">Toutes les langues</option>
+          <option value="english">English</option>
+          <option value="french">French</option>
+          <option value="german">German</option>
+          <option value="italian">Italian</option>
+          <option value="russian">Russian</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="level">Niveau</label>
+        <select id="level">
+          <option value="">Tous les niveaux</option>
+          <option value="1">A0</option>
+          <option value="2">A1</option>
+          <option value="3">A2</option>
+          <option value="4">B1</option>
+          <option value="5">B2</option>
+          <option value="6">C1</option>
+          <option value="7">C2</option>
+        </select>
+      </div>
+
+      <button id="searchBtn">Rechercher</button>
+    </div>
+
+    <div id="loading" class="message hidden">Chargement des cours...</div>
+    <div id="error" class="message error hidden"></div>
+    <div id="results" class="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
