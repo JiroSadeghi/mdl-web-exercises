@@ -1,4 +1,4 @@
-Exercice 1
+## Exercice 1
 
 Réponse :
 Le code affiche 4.
